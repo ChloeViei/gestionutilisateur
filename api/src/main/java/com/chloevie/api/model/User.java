@@ -1,4 +1,4 @@
-package com.chloevie.gestionutilisateur.model;
+package com.chloevie.api.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,8 +11,8 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "employees")
-public class Employee {
+@Table(name = "users")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -27,5 +27,5 @@ public class Employee {
     private String mail;
 
     private String password;
-
+    
 }
